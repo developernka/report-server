@@ -1,0 +1,11 @@
+<!-- <a routerLink="/login">Login</a>
+<a routerLink="/error">Error</a> -->
+<!-- <button (click)="refresh()">{{ cacheStatus | json }}</button> -->
+<table class="table table-bordered">
+  <tr *ngFor="let status of statusList" id="{{ status._id }}">
+    <td>{{ status._id }}</td>
+    <td>{{ status.createdAt }}</td>
+    <td>{{ status.updatedAt }}</td>
+    <td (click)="getInfo($event)">Info</td>
+  </tr>
+</table>

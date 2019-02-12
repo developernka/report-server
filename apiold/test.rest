@@ -1,0 +1,12 @@
+GET http://localhost:3000/api HTTP/1.1
+
+###
+GET http://localhost:3000/token
+
+###
+POST http://localhost:3000/user?username=6193811
+
+{
+    "username":"6193811",
+    "password":"6193811"
+}

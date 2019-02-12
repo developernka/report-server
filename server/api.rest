@@ -1,0 +1,24 @@
+GET http://localhost:3000/api/status
+
+###
+POST http://localhost:3000/api/status
+Content-Type: application/json
+
+{
+    "hello":true,
+    "Hi":false,
+    "data":{"hello":true}
+}
+
+###
+POST http://localhost:3000/api/status/5c61576442f78e30f80dd427
+Content-Type: application/json
+
+{
+    "data":{
+        "hey":true
+    }
+}
+
+###
+DELETE http://localhost:3000/api/status/5c61576442f78e30f80dd427
